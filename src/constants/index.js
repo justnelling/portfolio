@@ -34,6 +34,7 @@ import {
   dalle_clone,
   ecom_stripe,
   metaversus,
+  leetcode,
 } from "../assets";
 
 export const navLinks = [
@@ -56,6 +57,11 @@ export const socials = [
     id: "github",
     icon: github,
     link: "https://github.com/magnumdatura",
+  },
+  {
+    id: "leetcode",
+    icon: leetcode,
+    link: "https://leetcode.com/user5822bD/",
   },
   {
     id: "linkedin",

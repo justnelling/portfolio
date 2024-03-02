@@ -3,10 +3,11 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
 
-import artstation from "./artstation4.png"
-import linkedin from "./linkedin.png"
+import github from "./github.png";
+import leetcode from "./leetcode.png";
+import artstation from "./artstation4.png";
+import linkedin from "./linkedin.png";
 
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -26,29 +27,29 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
 
 // my own
-import python from './tech/python.png'
-import pandas from './tech/pandas.png'
-import tensorflow from './tech/tensorflow.png'
-import django from './tech/django.png'
-import flask from './tech/flask.png'
-import nextjs from './tech/nextjs.png'
+import python from "./tech/python.png";
+import pandas from "./tech/pandas.png";
+import tensorflow from "./tech/tensorflow.png";
+import django from "./tech/django.png";
+import flask from "./tech/flask.png";
+import nextjs from "./tech/nextjs.png";
 
 // import meta from "./company/meta.png";
 // import shopify from "./company/shopify.png";
 // import starbucks from "./company/starbucks.png";
 // import tesla from "./company/tesla.png";
 
-import reluvate from './company/Reluvate.png';
-import visual_artist from './company/visual_art.png'
+import reluvate from "./company/Reluvate.png";
+import visual_artist from "./company/visual_art.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import shirt_designer from "./portfolio/3JS_custom_shirt.png"
-import dalle_clone from "./portfolio/dalle_clone.png"
-import ecom_stripe from "./portfolio/ecom_stripe.png"
-import metaversus from "./portfolio/metaversus.png"
+import shirt_designer from "./portfolio/3JS_custom_shirt.png";
+import dalle_clone from "./portfolio/dalle_clone.png";
+import ecom_stripe from "./portfolio/ecom_stripe.png";
+import metaversus from "./portfolio/metaversus.png";
 
 export {
   logo,
@@ -88,5 +89,6 @@ export {
   shirt_designer,
   dalle_clone,
   ecom_stripe,
-  metaversus
+  metaversus,
+  leetcode
 };
