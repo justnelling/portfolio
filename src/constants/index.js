@@ -61,7 +61,7 @@ export const socials = [
   {
     id: "leetcode",
     icon: leetcode,
-    link: "https://leetcode.com/user5822bD/",
+    link: "https://leetcode.com/l3o_ranger/",
   },
   {
     id: "linkedin",
