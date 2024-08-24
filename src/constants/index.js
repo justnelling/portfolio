@@ -56,7 +56,7 @@ export const socials = [
   {
     id: "github",
     icon: github,
-    link: "https://github.com/magnumdatura",
+    link: "https://github.com/nellingDev",
   },
   {
     id: "leetcode",
