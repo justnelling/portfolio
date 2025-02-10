@@ -15,36 +15,32 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto object-contain">
         {/* <div className="items-center flex"> */}
-          <Link
-            to="/"
-            className="flex items-center gap-2"
-            onClick={() => {
-              setActive("");
-              window.scrollTo(0, 0);
-            }}
-          >
-            <img src={logo} alt="logo" className="w-16 h-16 object-contain" />
-            <p className="text-white text-[18px] font-bold cursor-pointer flex">
-              Lionel &nbsp;
-              <span className="sm:block hidden">| &nbsp;Coder & Artist</span>
-            </p>
-          </Link>
+        <Link
+          to="/"
+          className="flex items-center gap-2"
+          onClick={() => {
+            setActive("");
+            window.scrollTo(0, 0);
+          }}
+        >
+          <img src={logo} alt="logo" className="w-16 h-16 object-contain" />
+          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+            Lionel &nbsp;
+            <span className="sm:block hidden">| &nbsp;AI Engineer</span>
+          </p>
+        </Link>
 
-          <ul className="list-none hidden sm:flex flex-row gap-10">
-            {socials.map((social) => (
-              <li>
-                <div>
-                  <a
-                    href={social.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={social.icon} className="w-7 h-7 object-contain" />
-                  </a>
-                </div>
-              </li>
-            ))}
-          </ul>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
+          {socials.map((social) => (
+            <li>
+              <div>
+                <a href={social.link} target="_blank" rel="noopener noreferrer">
+                  <img src={social.icon} className="w-7 h-7 object-contain" />
+                </a>
+              </div>
+            </li>
+          ))}
+        </ul>
         {/* </div> */}
 
         <ul className="list-none hidden sm:flex flex-row gap-10">

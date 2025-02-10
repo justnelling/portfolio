@@ -1,65 +1,21 @@
-import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import { cv } from "../assets";
+
 const Contact = () => {
-  const formRef = useRef();
-
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-
-    setForm({ ...form, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    setLoading(true);
-
-    emailjs
-      .send(
-        "service_xort9s7",
-        "template_xqce2br",
-        {
-          from_name: form.name,
-          to_name: "Lionel",
-          from_email: form.email,
-          to_email: "erdua.regen@gmail.com",
-          message: form.message,
-        },
-        "TBMG-obDbx3sLcl4h"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-
-          console.log(error);
-
-          alert("Something went wrong.");
-        }
-      );
+  const handleDownloadCV = () => {
+    // Replace 'path-to-your-cv.pdf' with the actual path to your CV file
+    const cvPath = cv;
+    const link = document.createElement("a");
+    link.href = cvPath;
+    link.download = "Lionel_Deng_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -71,51 +27,26 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your email?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
-            <textarea
-              rows="7"
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="Send me a message!"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+        <div className="mt-12 flex flex-col gap-12">
+          <div className="flex flex-col gap-4">
+            <p className="text-white font-medium">Email me at:</p>
+            <a
+              href="mailto:lioneldeng.dev@gmail.com"
+              className="text-secondary hover:text-white transition-colors duration-300 text-xl"
+            >
+              lioneldeng.dev@gmail.com
+            </a>
+          </div>
+
+          <div className="flex justify-center">
+            <button
+              onClick={handleDownloadCV}
+              className="bg-tertiary py-3 px-80 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl hover:bg-opacity-80 transition-opacity duration-300"
+            >
+              Download CV
+            </button>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div

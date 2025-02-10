@@ -41,6 +41,7 @@ import nextjs from "./tech/nextjs.png";
 
 import reluvate from "./company/Reluvate.png";
 import visual_artist from "./company/visual_art.png";
+import mas from "./company/MAS.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -50,6 +51,8 @@ import shirt_designer from "./portfolio/3JS_custom_shirt.png";
 import dalle_clone from "./portfolio/dalle_clone.png";
 import ecom_stripe from "./portfolio/ecom_stripe.png";
 import metaversus from "./portfolio/metaversus.png";
+
+import cv from "./cv/Lionel Deng Fullstack Developer.pdf";
 
 export {
   logo,
@@ -83,6 +86,7 @@ export {
   flask,
   nextjs,
   reluvate,
+  mas,
   visual_artist,
   artstation,
   linkedin,
@@ -90,5 +94,6 @@ export {
   dalle_clone,
   ecom_stripe,
   metaversus,
-  leetcode
+  leetcode,
+  cv,
 };

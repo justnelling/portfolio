@@ -26,6 +26,7 @@ import {
   flask,
   nextjs,
   reluvate,
+  mas,
   visual_artist,
   github,
   artstation,
@@ -77,15 +78,15 @@ export const socials = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "AI Engineer",
     icon: web,
   },
   {
-    title: "React Developer",
+    title: "Python Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Web Developer",
     icon: backend,
   },
   {
@@ -174,6 +175,19 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Core Python Developer",
+    company_name:
+      "Monetary Authority of Singapore (contracting company: Virtusa)",
+    icon: mas,
+    iconBg: "#E6DEDD",
+    date: "May 2024 - now",
+    points: [
+      "Domain generation algorithm (DGA) detection system: Researched, architected and implemented NLP neural network architectures tailored to detect potential DGA in MAS’ DNS traffic, integrated with Splunk and automated reputation lookups (VirusTotal). CNN model with F1-Score of 98%, and reduced false positives from 4000 - 150 per day, identifying genuine threats for SOC analysts to action upon.",
+      "DMARC reports processing and visibility system: Designed and implemented an end-to-end pipeline to read DMARC email reports, evaluate DKIM/SPF policy, and pipe results to Splunk dashboard for downstream security analysis. Handled large amounts of data in porting system files of 3 years into a new pipeline, managing CPU and RAM usage on RHEL server, leading to establishment of MAS SOC’s first DMARC visibility dashboard. ",
+      "SOC ticketing / alerts / action review automation system: Drove automation efforts in the 3 cycles of SOC security analyst workflow: ticketing, alert response, and investigative actions. Integrated client-side and server-side solutions using browser automations (playwright), RHEL cron jobs and bash shell scripts to raise tickets in intranet platforms like ServiceNow, send action reports to relevant stakeholders via AMS mailbox API, and aggregate investigative data from Splunk. Reduced analyst man-hours across these tasks from 62 hrs to 5 hrs per month.",
+    ],
+  },
   {
     title: "Full-stack Developer",
     company_name: "Reluvate Technologies",

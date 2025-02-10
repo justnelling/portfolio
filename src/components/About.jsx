@@ -41,14 +41,24 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a passionate and creative software developer with a keen eye for
-        detail, excited to build web products that empower. I have work
-        experience in TypeScript, JavaScript, React and Python. I am versed across
-        fullstack development. <br />
-        I'm a quick learner and dynamic teamplayer who enjoys working
-        collaboratively to deliver efficient, scalable and user-friendly
-        solutions that hit real world problems. <br /> Let's work together to
-        bring our ideas to life!
+        I am a Python developer with fullstack experience who is actively
+        transitioning into AI engineering.
+        <br />
+        With a background in webdev, data science, and Python, I am currently
+        building AI SAAS products of my own. I'm excited by the applications of
+        vector embeddings and LLMs for perfect recall (never lose an idea), idea
+        networking (proliferate that idea) and digital knowledge twins (a
+        digital agent tailored to iterate and execute ideas) based on users'
+        online histories, prompts and improved tool use.
+        <br />
+        I believe we are on the cusp of the greatest digital revolution and I am
+        devoted to learning all I can about the coming Intelligence Age, powered
+        by neural networks and transformers.
+        <br />I combine a keen eye for detail with quick learning ability,
+        making me an effective team player who can adapt to emerging
+        technologies. I'm passionate about radical innovation and scalable,
+        intuitive solutions that address real-world problems. Let's work
+        together!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
