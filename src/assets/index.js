@@ -33,6 +33,7 @@ import tensorflow from "./tech/tensorflow.png";
 import django from "./tech/django.png";
 import flask from "./tech/flask.png";
 import nextjs from "./tech/nextjs.png";
+import pytorch from "./tech/pytorch.png";
 
 // import meta from "./company/meta.png";
 // import shopify from "./company/shopify.png";
@@ -96,4 +97,5 @@ export {
   metaversus,
   leetcode,
   cv,
+  pytorch,
 };

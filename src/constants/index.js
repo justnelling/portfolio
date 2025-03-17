@@ -36,6 +36,7 @@ import {
   ecom_stripe,
   metaversus,
   leetcode,
+  pytorch,
 } from "../assets";
 
 export const navLinks = [
@@ -171,6 +172,10 @@ const technologies = [
   {
     name: "Tensorflow",
     icon: tensorflow,
+  },
+  {
+    name: "PyTorch",
+    icon: pytorch,
   },
 ];
 
