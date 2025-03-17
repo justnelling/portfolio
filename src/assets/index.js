@@ -53,7 +53,7 @@ import dalle_clone from "./portfolio/dalle_clone.png";
 import ecom_stripe from "./portfolio/ecom_stripe.png";
 import metaversus from "./portfolio/metaversus.png";
 
-import cv from "./cv/Lionel Deng Fullstack Developer.pdf";
+import cv from "./cv/Lionel Deng AI Engineer.pdf";
 
 export {
   logo,
