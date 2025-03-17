@@ -19,7 +19,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             An artist turned software engineer, I am passionate about building
-            AI SAAS products that transform reality.
+            AI experiences that feel like personal intelligence companions.
           </p>
         </div>
       </div>
